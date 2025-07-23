@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio de Ezequiel</title>
+  <style>
+    /* --- RESET BÁSICO --- */
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    header {
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      line-height: 1.6;
+    }
+
+    button {
+      background: #ff9800;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #e68900;
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      opacity: 0.6;
+    }
+
+    /* Animación suave al cargar */
+    body.fade-in {
+      animation: fadeIn 1.5s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>¡Bienvenido a mi Portafolio!</h1>
+    <p>Hola, soy Ezequiel. Suboficial, estudiante de programación y runner. Aquí encontrarás mis proyectos, mi experiencia y cómo contactarme.</p>
+    <button onclick="mostrarMensaje()">Contactarme</button>
+  </header>
+
+  <footer>
+    © 2025 Ezequiel – Portafolio personal
+  </footer>
+
+  <script>
+    // Agrega una clase al body para la animación
+    document.body.classList.add('fade-in');
+
+    function mostrarMensaje() {
+      alert("Gracias por tu interés. Escríbeme a mi correo: ezequiel@ejemplo.com");
+    }
+  </script>
+</body>
+</html>

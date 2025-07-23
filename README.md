@@ -1,5 +1,5 @@
 # miportfolio
-porfolio Ezequiel Moraga
+porfolio ezequiel moraga
 🌐 Portafolio de Ezequiel
 
 ¡Bienvenido a mi portafolio personal!  
