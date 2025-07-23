@@ -1,6 +1,6 @@
 
 header {
-  background: url("ezefoto.avif") no-repeat center center;
+  background: url("ezefoto.png") no-repeat center center;
   background-size: cover;
   padding: 4rem 2rem;
   border-radius: 12px;
@@ -9,7 +9,7 @@ header {
 
 /* Estilos generales del body */
 body {
-  background: url("ezefoto.avif") no-repeat center center fixed;
+  background: url("ezefoto.png") no-repeat center center fixed;
   background-size: cover;
   color: #fff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
