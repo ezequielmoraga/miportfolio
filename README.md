@@ -1,4 +1,4 @@
-# miportfolio
+# Miportfolio
 porfolio ezequiel moraga
 🌐 Portafolio de Ezequiel
 
