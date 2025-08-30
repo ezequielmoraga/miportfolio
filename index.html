@@ -69,25 +69,6 @@ Trabajo con compromiso, organización y una actitud de mejora continua. Este por
   <footer>
     © 2025 Portafolio personal Ezequiel - Todos los derechos reservados.
   </footer>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const secs = document.querySelectorAll('.fade-in-section');
-      const obs = new IntersectionObserver(entries => {
-        entries.forEach(e => {
-          if (e.isIntersecting) {
-            e.target.classList.add('visible'); // agrega la clase visible al entrar en pantalla
-            obs.unobserve(e.target); // deja de observar esa sección
-          }
-        });
-      }, { threshold: 0.2 });
 
-      secs.forEach(s => obs.observe(s)); // observa cada sección
-    });
-
-    // Función para mostrar un mensaje al presionar el botón
-    function mostrarMensaje() {
-      alert("Gracias por tu interés. Escríbeme a mi correo: ezequielmoraga3572@gmail.com");
-    }
-  </script>
 </body>
 </html>
