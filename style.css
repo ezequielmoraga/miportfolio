@@ -78,6 +78,7 @@ body {
  }
  button:hover {
   background: #7CFC00;
+  border-radius: 8px;
   transform: scale(1.05);
  }
  /* Animaciones de aparición */
@@ -141,6 +142,7 @@ body {
 /* Hover sobre enlaces del menú */
 .dropdown-content a:hover {
   background-color: #71a43e;
+  border-radius: 8px;
 }
 
 /* Clase que muestra el menú al hacer clic */
