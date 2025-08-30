@@ -93,8 +93,10 @@ body {
  }
  footer {
   text-align: center; /* centra el contenido del pie de página */
+  color: #fffafa;   
+  font-weight: bold;
   margin-top: 3rem;   /* espacio superior */
-  font-size: 0.9rem;
+  font-size: 50 px;
   opacity: 0.7;
 }
 /* Estilo del botón "Más" */
