@@ -179,3 +179,13 @@ nav {
 .show {
   display: block;
 }
+.links_centados{
+  display: inline-flex;           /* los coloca en una sola línea */
+  align-items: center;            /* centra verticalmente texto e imagen */
+  gap: 8px;                        /* espacio entre la imagen y el texto */
+  text-decoration: none;           /* sin subrayado */
+  color: #fff;                     /* color de texto */
+}
+.links_centados img {
+  display: block;                  /* evita espacios extra debajo de la imagen */
+}
