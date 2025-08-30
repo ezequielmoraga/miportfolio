@@ -8,10 +8,6 @@ img, video, iframe {
   height: auto;
 }
 
-
-
-
-
 header {
   background: url("images/fondowb.jpg") no-repeat center center;
   background-size: cover;
@@ -30,10 +26,6 @@ body {
   overflow-x: hidden;
 }
  /* Estilos del menú de navegación */
-
-
-
-
 
 /* NAV en una sola línea para pantallas pequeñas */
 @media (max-width: 600px) {
