@@ -13,7 +13,7 @@ img, video, iframe {
 
 
 header {
-  background: url("images/ezefoto.png") no-repeat center center;
+  background: url("images/fondowb.jpg") no-repeat center center;
   background-size: cover;
   padding: 4rem 2rem;
   border-radius: 12px;
@@ -22,9 +22,9 @@ header {
 
 /* Estilos generales del body */
 body {
-  background: url("images/ezefoto.png") no-repeat center center fixed;
+  background: url("images/fondowb.jpg") no-repeat center center fixed;
   background-size: cover;
-  color: #fff;
+  color: #ffffff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding-top: 80px;
   overflow-x: hidden;
