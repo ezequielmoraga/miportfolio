@@ -30,3 +30,17 @@ window.onclick = function(e) {
   }
 };
 
+window.embeddedChatbotConfig = {
+  chatbotId: "2t-x0QxNsdXDIP_6NeFSd",
+  domain: "www.chatbase.co",
+  color: "none"
+};
+
+(function() {
+  var s = document.createElement("script");
+  s.src = "https://www.chatbase.co/embed.min.js";
+  s.setAttribute("chatbotId", "2t-x0QxNsdXDIP_6NeFSd");
+  s.setAttribute("domain", "www.chatbase.co");
+  s.defer = true;
+  document.body.appendChild(s);
+})();
