@@ -30,7 +30,7 @@ body {
 /* NAV en una sola línea para pantallas pequeñas */
 @media (max-width: 600px) {
   nav {
-    flex-wrap: nowrap;           /* 👈 No se rompe en varias líneas */
+    flex-wrap: nowrap;           /*  No se rompe en varias líneas */
     justify-content: space-around; /* Reparte enlaces para que entren */
     gap: 0.5rem;                  /* Menos espacio entre ellos */
     padding: 0.5rem;              /* Menos alto */
@@ -68,9 +68,17 @@ nav a:hover {
   border-bottom: 2px solid #7CFC00;
 }
  /* Títulos de las secciones */
-h1, h2, h3 {
+h1, h2 {
   color: #7CFC00; /* Verde neón */
-  margin-bottom: 1rem;
+  
+  margin-top: 3%;  /* espacio superior */
+  margin-bottom: 2%; /* espacio inferior */
+  text-align: center; /* centra horizontalmente el texto */
+}
+h3 {
+  color: #7CFC00; /* Verde neón */
+  margin-top: 3%;  /* espacio superior */
+  margin-bottom: 2%; /* espacio inferior */
   text-align: center; /* centra horizontalmente el texto */
 }
 h5 {
@@ -105,28 +113,28 @@ button {
   cursor: pointer;
   transition: background 3.2s, transform 0.12s;
 }
- button:hover {
+button:hover {
   background: #7CFC00;
   border-radius: 8px;
   transform: scale(1.05);
 }
  /* Animaciones de aparición */
 .fade-in-section {
-  opacity: 0;
+  opacity: 50%;
   transform: translateY(50px); /* empieza abajo */
-  transition: opacity 1s ease-out, transform 1s ease-out;
+  transition: opacity 3s ease-out, transform 3s ease-out;
 }
 .fade-in-section.visible {
-  opacity: 1;
+  opacity: 12;
   transform: translateY(0); /* vuelve a su lugar */
 }
 footer {
   text-align: center; /* centra el contenido del pie de página */
-  color: #fffafa;   
+  color: #ffffff;   
   font-weight: bold;
   margin-top: 3rem;   /* espacio superior */
   font-size: 15px;
-  opacity: 0.7;
+  padding: 1rem;      /* espacio interno */
 }
 /* Estilo del botón "Más" */
 .dropbtn {
