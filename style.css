@@ -130,8 +130,8 @@ button:hover {
 }
 footer {
   text-align: center; /* centra el contenido del pie de página */
-  color: #ffffff;   
-  font-weight: bold;
+  color: #7CFC00; /* Color del texto */
+  /* font-weight: bold; */
   margin-top: 3rem;   /* espacio superior */
   font-size: 15px;
   padding: 1rem;      /* espacio interno */
