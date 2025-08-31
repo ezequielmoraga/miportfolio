@@ -56,33 +56,33 @@ nav {
   /* permite que los enlaces bajen a otra línea cuando no entran */
   flex-wrap: wrap;
 }
- nav a {
+nav a {
   color: #fff;
   font-weight: bold;
   text-decoration: none;
   font-size: 1.1rem;
   transition: color 0.3s, border-bottom 0.3s;
- }
- nav a:hover {
+}
+nav a:hover {
   color: #7CFC00;
   border-bottom: 2px solid #7CFC00;
- }
+}
  /* Títulos de las secciones */
- h1, h2, h3 {
+h1, h2, h3 {
   color: #7CFC00; /* Verde neón */
   margin-bottom: 1rem;
   text-align: center; /* centra horizontalmente el texto */
- }
- h5 {
+}
+h5 {
     text-align: center;
- }
- .titulo {
+}
+.titulo {
     text-align: center;
- }
+}
 
 
  /* Secciones tipo tarjeta */
- section {
+section {
   background: linear-gradient(145deg, #050505, #0f0f0f);
   border: 1px solid #7CFC00;
   border-radius: 12px;
@@ -90,9 +90,9 @@ nav {
   margin: 2rem auto;
   max-width: 900px;
   box-shadow: 0 0 10px #7CFC00;
- }
+}
 /* Botones */
- button {
+button {
   background: #7CFC00;
   color: #000;
   font-weight: bold;
@@ -104,23 +104,23 @@ nav {
   margin-left: 30px;
   cursor: pointer;
   transition: background 3.2s, transform 0.12s;
- }
+}
  button:hover {
   background: #7CFC00;
   border-radius: 8px;
   transform: scale(1.05);
- }
+}
  /* Animaciones de aparición */
- .fade-in-section {
+.fade-in-section {
   opacity: 0;
   transform: translateY(50px); /* empieza abajo */
   transition: opacity 1s ease-out, transform 1s ease-out;
- }
- .fade-in-section.visible {
+}
+.fade-in-section.visible {
   opacity: 1;
   transform: translateY(0); /* vuelve a su lugar */
- }
- footer {
+}
+footer {
   text-align: center; /* centra el contenido del pie de página */
   color: #fffafa;   
   font-weight: bold;
