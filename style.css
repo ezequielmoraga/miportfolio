@@ -76,6 +76,9 @@ nav {
  h5 {
     text-align: center;
  }
+ .titulo {
+    text-align: center;
+ }
 
 
  /* Secciones tipo tarjeta */
@@ -128,37 +131,37 @@ nav {
 /* Estilo del botón "Más" */
 .dropbtn {
   background-color: #7CFC00;         /* Color verde que usaste */
-  color: #050505;                    /* Texto claro */
+  color: #000000;                    /* Texto claro */
   border: none;
   padding: 8px 12px;
   cursor: pointer;
   font-weight: bold;
-  border-radius: 1px;
-
+  border-radius: 12px;
   position: absolute;                /* Lo saca del flujo normal */
-  right: 10px;                       /* Lo pega a la derecha */
-  top: 50%;                          /* Centrado verticalmente */
+  right: 10%;                       /* Lo pega a la derecha */
+  top: 5%;                          /* Centrado verticalmente */
   transform: translateY(-50%);       /* Ajusta el centrado vertical */
 }
 
 /* Contenedor del dropdown */
 .dropdown {
   position: absolute;
-  left: 12%;
-  top: 0%;                         /* Posiciona el menú debajo del botón */
+  left: 80%;
+  top: 50%;                         /* Posiciona el menú debajo del botón */
 }
 
 /* Menú desplegable (oculto por defecto) */
 .dropdown-content {
   display: none;
   position: absolute;
-  right: 2px;                       /* 👈 agrega unidad */
+  left: 10px;                       /* 👈 agrega unidad */
   top: calc(100% + 8px);
-  background-color: rgba(47,52,49,0.323);
+  background-color: rgba(107, 119, 112, 0.323);
   min-width: 180px;
   max-width: calc(100vw - 2rem);    /* 👈 no se sale en móvil */
   box-shadow: 0 8px 16px rgba(31,47,29,0.2);
   z-index: 1;
+  border-radius: 8px;
 }
 
 /* Enlaces del menú */

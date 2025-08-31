@@ -18,20 +18,19 @@
  <body>
   <!-- Menú de navegación fijo arriba -->
   <nav>
+    <a href="#inicio">Inicio</a>
     <a href="#sobre-mi">Sobre mí</a>
     <a href="#proyectos">Proyectos</a>
     <a href="#habilidades">Habilidades</a>
     <a href="#contacto">Contacto</a>
   </nav>
+  
   <!-- Encabezado principal -->
-  <header class="fade-in-section">
+  <header id="inicio" class="fade-in-section">
     <h1>¡Hola! Soy Ezequiel</h1>
-    <h5>Profesional IT | Programador Jr. | Documentación Técnica y Procesos | Perfil Funcional y Resolutivo. </h5>
-    <!-- Botón que lanza un mensaje -->
-    <!-- <button onclick="mostrarMensaje()">Contactarme</button>
-    <button onclick="mostrarMensaje()">Whatssap</button> -->
-
-   <div class="dropdown">
+    <h4 class="titulo"> Profesional IT | Programador Jr. | Documentación Técnica y Procesos | Perfil Funcional y Resolutivo.
+    </h4>
+    <div class="dropdown">
       <button onclick="toggleMenu()" class="dropbtn">Más</button>
       <div id="miDropdown" class="dropdown-content">
         <a href="https://github.com/ezequielmoraga" target="blank">Portfolio GitHub</a>
@@ -40,6 +39,11 @@
         <a href="https://www.linkedin.com/in/ezequiel-moraga-0a4560275/" target="blank">LinkedIn</a>
       </div>
     </div>
+    <!-- Botón que lanza un mensaje -->
+    <!-- <button onclick="mostrarMensaje()">Contactarme</button>
+    <button onclick="mostrarMensaje()">Whatssap</button> -->
+
+
   </header>
 
   <!-- Sección sobre mí -->
@@ -54,7 +58,7 @@
     <h2>Proyectos</h2>
     <div>
       <h3>Sistema de Gestión de Biblioteca</h3>
-      <p>App en Python con Tkinter y SQLite para gestionar libros.</p>
+      <p>App en Python con Django y SQLite para gestionar libros.</p>
       <h3>App de control de stock</h3>
       <p>Aplicación para registrar, modificar y eliminar productos con base de datos.</p>
       <h3>Página web personal</h3>
