@@ -768,3 +768,7 @@ nav .nav-links li a:hover {
   /* Asegurá que el bubble del chatbot NO tape el menú */
   #chatbase-bubble { z-index: 9999 !important; }      /* debajo del menú (10005/10010) */
 }
+
+
+.dropdown-content.show ~ #chatbase-bubble { display: none !important; }
+/* ====== FIN MENÚ MÓVIL ====== */
