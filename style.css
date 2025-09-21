@@ -602,3 +602,23 @@ footer {
     height: 45px;
   }
 }
+/* Ajustes carrusel en pantallas móviles */
+@media (max-width: 768px) {
+  .carrusel {
+    min-height: auto;
+    flex-direction: column;
+    perspective: none; /* quita el efecto 3D */
+  }
+
+  .curso-card {
+    position: relative !important;
+    transform: none !important;
+    opacity: 1 !important;
+    width: 90% !important;
+    margin: 1rem auto;
+  }
+
+  .carrusel-btn {
+    display: none; /* si querés ocultar los botones en mobile */
+  }
+}
