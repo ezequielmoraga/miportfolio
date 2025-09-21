@@ -89,3 +89,28 @@ function abrirCertificado(src) {
 function cerrarCertificado() {
   document.getElementById("popup-certificado").style.display = "none";
 }
+
+
+//carrusesel
+// Swipe en el carrusel para móviles
+const carrusel = document.getElementById("carrusel");
+let startX = 0;
+
+if (carrusel) {
+  carrusel.addEventListener("touchstart", (e) => {
+    startX = e.touches[0].clientX;
+  });
+
+  carrusel.addEventListener("touchend", (e) => {
+    let endX = e.changedTouches[0].clientX;
+    let diff = startX - endX;
+
+    if (Math.abs(diff) > 50) { // si se movió más de 50px
+      if (diff > 0) {
+        moverCarrusel(1);  // swipe izquierda → siguiente
+      } else {
+        moverCarrusel(-1); // swipe derecha → anterior
+      }
+    }
+  });
+}

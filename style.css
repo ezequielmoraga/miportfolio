@@ -603,22 +603,29 @@ footer {
   }
 }
 /* Ajustes carrusel en pantallas móviles */
+/* Carrusel en móviles: deslizable */
 @media (max-width: 768px) {
   .carrusel {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;       /* permite scroll horizontal */
+    scroll-snap-type: x mandatory; /* efecto "snap" al deslizar */
+    -webkit-overflow-scrolling: touch;
+    gap: 1rem;
     min-height: auto;
-    flex-direction: column;
-    perspective: none; /* quita el efecto 3D */
+    perspective: none;
   }
 
   .curso-card {
     position: relative !important;
+    flex: 0 0 80%;          /* ocupa 80% del ancho de la pantalla */
+    scroll-snap-align: center;
     transform: none !important;
     opacity: 1 !important;
-    width: 90% !important;
-    margin: 1rem auto;
+    margin: 0 auto;
   }
 
   .carrusel-btn {
-    display: none; /* si querés ocultar los botones en mobile */
+    display: none; /* ocultamos las flechas en móvil */
   }
 }
