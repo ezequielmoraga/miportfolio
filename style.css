@@ -460,3 +460,125 @@ footer {
   transform: scale(1.05);
   color: #00ff2f;
 }
+
+
+/* 📱 Ajustes para tablets */
+@media (max-width: 1024px) {
+  nav {
+    gap: 1.2rem;
+    padding: 1rem;
+  }
+  nav a {
+    font-size: 1.2rem;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .perfil-foto {
+    width: 220px;
+    height: 220px;
+    margin-bottom: 1.5rem;
+  }
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+  .hero-text h4 {
+    font-size: 1.1rem;
+  }
+  section {
+    margin: 2rem 1rem;
+    padding: 1.5rem;
+  }
+}
+
+/* 📱 Ajustes para celulares */
+@media (max-width: 600px) {
+  /* NAV */
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 0.5rem;
+  }
+  nav a {
+    font-size: 1rem;
+    padding: 0.4rem 0;
+  }
+
+  /* HERO */
+  .hero {
+    padding: 2rem 5%;
+  }
+  .perfil-foto {
+    width: 140px;
+    height: 140px;
+  }
+  .hero-text h1 {
+    font-size: 1.6rem;
+  }
+  .hero-text h4 {
+    font-size: 0.95rem;
+  }
+
+  /* SOBRE MÍ */
+  #sobre-mi p {
+    font-size: 0.9rem;
+    text-align: justify;
+    padding: 0 0.5rem;
+  }
+
+  /* SKILLS */
+  .skills-carrusel img {
+    width: 45px;
+    height: 45px;
+  }
+
+  /* CURSOS */
+  .carrusel {
+    flex-direction: column;
+    min-height: auto;
+  }
+  .curso-card {
+    position: relative;
+    width: 95%;
+    margin: 1rem auto;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+  .curso-card img.certificado-thumb {
+    max-width: 100%;
+    max-height: 160px;
+  }
+  .carrusel-btn {
+    display: none; /* ocultar flechas en móvil */
+  }
+
+  /* CONTACTO */
+  .contact-box {
+    width: 95%;
+    padding: 20px;
+  }
+  .contact-box h2 {
+    font-size: 20px;
+  }
+  .contact-box p {
+    font-size: 14px;
+  }
+  .links_centados {
+    flex-direction: column;
+    gap: 6px;
+    font-size: 13px;
+  }
+  .links_centados img {
+    width: 28px;
+    height: 28px;
+  }
+
+  /* FOOTER */
+  footer {
+    font-size: 11px;
+    padding: 0.5rem;
+  }
+}
