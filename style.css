@@ -14,18 +14,19 @@ p {
 
 /* Header */
 header {
-  min-height: 30vh;
+  min-height: 70vh; /* PC: altura cómoda */
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   text-align: center;
+  padding: 3rem 1rem;
 }
 
 @media (max-width: 768px) {
   header {
-    min-height: auto;    
-    padding: 2rem 1rem;  
+    min-height: auto;   /* no ocupa toda la pantalla en celular */
+    padding: 1.5rem 1rem;
   }
 }
 
@@ -38,51 +39,57 @@ body {
   padding-top: 80px;
   overflow-x: hidden;
   font-family: 'Fira Code', monospace;
-  font-weight: 300;
+  font-weight: 100;
   letter-spacing: 0.5px;
 }
 
 /* Nav */
+/* ====== NAV GENERAL ====== */
 nav {
-  position: fixed;
-  top: 0; left: 0; width: 100%;
-  background: rgba(0, 0, 0, 0);
-  backdrop-filter: blur(8px);
-  display: flex;
-  justify-content: center;
-  gap: 3rem;
-  padding: 1.5rem 0;
-  z-index: 1000;
-  flex-wrap: wrap;
+  position: fixed;              /* Deja la barra fija arriba aunque hagas scroll */
+  top: 1%;                       /* La pega al borde superior */
+  left: 0%;                      /* La pega al borde izquierdo */
+  width: 100%;                  /* Hace que ocupe todo el ancho de la pantalla */
+
+  background: rgba(87, 83, 83, 0.064); /* Color de fondo semitransparente */
+  backdrop-filter: blur(1px);   /* Le da efecto de desenfoque (glassmorphism) */
+
+  display: flex;                /* Activa flexbox para ordenar los elementos */
+  justify-content: space-between; /* Separa los elementos a los extremos (izq y der) */
+  align-items: center;          /* Centra los elementos verticalmente */
+  padding: 0.8rem 0.6rem;       /* Espacio interno (arriba/abajo = 0.6rem, izq/der = 1.5rem) */
+
+  z-index: 1000;                /* Lo pone por encima de casi todos los elementos */
+
+  /* línea y sombra */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.895); /* Línea verde translúcida debajo de la barra */
+  box-shadow: 0 10px 6px rgba(0,0,0,0.4); /* Sombra hacia abajo que da efecto flotante */
 }
 
-nav a {
+
+nav .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #7CFC00;
+}
+
+nav .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0; padding: 0;
+}
+
+nav .nav-links li a {
   color: #fff;
   font-weight: bold;
   text-decoration: none;
-  font-size: 1.6em;
-  transition: color 0.3s, border-bottom 0.3s;
+  font-size: 1.1rem;
 }
 
-nav a:hover {
+nav .nav-links li a:hover {
   color: #7CFC00;
-  border-bottom: 3px solid #7CFC00;
-}
-
-/* Nav en móvil */
-@media (max-width: 600px) {
-  nav {
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    gap: 0.5rem;
-    padding: 0.5rem;
-  }
-
-  nav a {
-    font-size: 0.85rem;
-    padding: 0.25rem 0.5rem;
-    white-space: nowrap;
-  }
+  border-bottom: 2px solid #7CFC00;
 }
 
 /* Títulos */
@@ -470,7 +477,7 @@ footer {
 }
 
 
-/* 📱 Ajustes para tablets */
+/*  Ajustes para tablets */
 @media (max-width: 1024px) {
   nav {
     gap: 1.2rem;
@@ -501,7 +508,7 @@ footer {
   }
 }
 
-/* 📱 Ajustes para celulares */
+/* Ajustes para celulares */
 @media (max-width: 600px) {
   /* NAV */
   nav {
@@ -639,45 +646,9 @@ footer {
 }
 
 
-/* Estilos generales menú */
-nav {
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  backdrop-filter: blur(8px);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  z-index: 1000;
-}
-
-nav .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #7CFC00;
-}
-
-nav .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-}
-
-nav .nav-links li a {
-  color: #fff;
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 1.1rem;
-}
-
-nav .nav-links li a:hover {
-  color: #7CFC00;
-  border-bottom: 2px solid #7CFC00;
-}
 
 /* Hamburguesa escondida en desktop */
+/* ====== HAMBURGER ====== */
 .hamburger {
   display: none;
   font-size: 2rem;
@@ -687,7 +658,7 @@ nav .nav-links li a:hover {
   cursor: pointer;
 }
 
-/* ===== Responsive ===== */
+/* ====== RESPONSIVE MENU ====== */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -696,20 +667,13 @@ nav .nav-links li a:hover {
     top: 60px; left: 0;
     width: 100%;
     background: rgba(0,0,0,0.9);
-    padding: 1rem;
-    gap: 1.5rem;
+    padding: 1rem 0;
     text-align: center;
+    gap: 1.2rem;
   }
-
-  .nav-links.show {
-    display: flex;
-  }
-
-  .hamburger {
-    display: block;
-  }
+  .nav-links.show { display: flex; }
+  .hamburger { display: block; }
 }
-
 
 /* Botón hamburguesa oculto en desktop */
 .dropbtn {
@@ -726,59 +690,7 @@ nav .nav-links li a:hover {
   display: flex;
 }
 
-/* ====== MÓVIL ====== */
-@media (max-width: 768px) {
-  /* Ocultamos el nav clásico en móvil */
-  nav { display: none; }
 
-  /* Botón hamburguesa visible y fijo */
-  .dropbtn {
-    display: inline-flex;
-    position: fixed;
-    top: 14px;
-    right: 14px;
-    z-index: 10010;             /* por encima de todo */
-    width: 56px; height: 56px;
-    align-items: center; justify-content: center;
-    background: #7CFC00;
-    color: #0b0b0b;
-    border: none; border-radius: 14px;
-    font-size: 28px; line-height: 1;
-    box-shadow: 0 8px 20px rgba(0,0,0,.35);
-  }
-
-  /* Overlay del menú */
-  .dropdown-content {
-    position: fixed;
-    inset: 0;                   /* top/right/bottom/left:0 */
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1.2rem;
-    background: rgba(0,0,0,.86);
-    backdrop-filter: blur(8px);
-    z-index: 10005;
-  }
-
-  .dropdown-content a {
-    color: #fff;
-    font-size: 1.6rem;
-    text-decoration: none;
-    padding: .4rem 1rem;
-  }
-
-  .dropdown-content a:hover {
-    color: #7CFC00;
-    text-shadow: 0 0 8px #7CFC00;
-  }
-
-  /* Asegurá que el bubble del chatbot NO tape el menú */
-  #chatbase-bubble { z-index: 9999 !important; }      /* debajo del menú (10005/10010) */
-}
-
-
-.dropdown-content.show ~ #chatbase-bubble { display: none !important; }
 /* ====== FIN MENÚ MÓVIL ====== */
 @media (max-width: 768px) {
   header {
