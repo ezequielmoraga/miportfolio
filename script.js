@@ -123,3 +123,22 @@ const navLinks = document.getElementById("nav-links");
 hamburger.addEventListener("click", () => {
   navLinks.classList.toggle("show");
 });
+
+//contacto frases
+// Frases dinámicas para la sección de contacto
+const frasesContacto = [
+  "¿Buscan un profesional IT resolutivo? Estoy listo para sumar valor en su equipo de trabajo.",
+  "Con experiencia en programación, documentación técnica y gestión IT, puedo aportar a los objetivos de su empresa.",
+  "Soy un perfil proactivo, organizado y con formación sólida en sistemas. Disponible para nuevos desafíos laborales.",
+  "Mi compromiso es ofrecer soluciones eficientes y prácticas. Si su equipo necesita un refuerzo, estoy preparado.",
+  "Estoy en constante capacitación en tecnologías actuales para contribuir al crecimiento de su organización."
+];
+// Reemplazar el texto al cargar la página
+document.addEventListener("DOMContentLoaded", () => {
+  const parrafo = document.querySelector("#contacto p");
+  if (parrafo) {
+    const fraseRandom = frasesContacto[Math.floor(Math.random() * frasesContacto.length)];
+    parrafo.textContent = fraseRandom;
+  }
+});
+// Fin frases contacto

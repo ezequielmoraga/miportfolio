@@ -47,9 +47,9 @@ body {
 /* ====== NAV GENERAL ====== */
 nav {
   position: fixed;              /* Deja la barra fija arriba aunque hagas scroll */
-  top: 1%;                       /* La pega al borde superior */
+  top: 2%;                       /* La pega al borde superior */
   left: 0%;                      /* La pega al borde izquierdo */
-  width: 100%;                  /* Hace que ocupe todo el ancho de la pantalla */
+  width: 95%;                  /* Hace que ocupe todo el ancho de la pantalla */
 
   background: rgba(87, 83, 83, 0.064); /* Color de fondo semitransparente */
   backdrop-filter: blur(1px);   /* Le da efecto de desenfoque (glassmorphism) */
@@ -68,28 +68,30 @@ nav {
 
 
 nav .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #7CFC00;
+  font-size: 1rem;       /* Tamaño de fuente del logo (letras más grandes) */
+  font-weight: 200;       /* Texto en negrita */
+  color: #7CFC00;          /* Color verde (LawnGreen) para destacar el logo */
 }
 
 nav .nav-links {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
-  margin: 0; padding: 0;
+  list-style: none;        /* Quita los puntitos de la lista (<ul>/<li>) */
+  display: flex;           /* Usa flexbox para organizar los enlaces en fila */
+  gap: 2rem;               /* Espacio horizontal entre cada enlace */
+  margin: 0; padding: 0;   /* Elimina márgenes y rellenos por defecto del <ul> */
 }
 
 nav .nav-links li a {
-  color: #fff;
-  font-weight: bold;
-  text-decoration: none;
-  font-size: 1.1rem;
+  color: #fff;               /* Texto blanco para los enlaces */
+  font-weight: 500;          /* Semi-bold: equilibrio entre fino y negrita */
+  text-decoration: none;     /* Quita el subrayado */
+  font-size: 1.2rem;         /* Tamaño moderado, un poco más grande que el texto normal */
+  letter-spacing: 0.5px;     /* Espaciado entre letras, da aire y elegancia */
+  transition: color 0.3s, border-bottom 0.3s;
 }
 
 nav .nav-links li a:hover {
-  color: #7CFC00;
-  border-bottom: 2px solid #7CFC00;
+  color: #7CFC00;          /* Cambia a verde cuando pasás el mouse */
+  border-bottom: 2px solid #7CFC00; /* Línea verde debajo al hacer hover */
 }
 
 /* Títulos */
@@ -428,54 +430,54 @@ footer {
 
 
 #contacto {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: linear-gradient(135deg, #040f0a, #41a552);
+  display: flex;                        /* Usa flexbox para organizar el contenido */
+  justify-content: center;              /* Centra horizontalmente la caja de contacto */
+  align-items: center;                  /* Centra verticalmente la caja de contacto */
+  min-height: 100vh;                    /* La sección ocupa toda la altura de la pantalla */
+  background: linear-gradient(135deg, #040f0a, #41a552); /* Fondo con degradado diagonal */
 }
 
 .contact-box {
-  background: rgba(255, 255, 255, 0.24);
-  backdrop-filter: blur(10px);
-  border-radius: 15px;
-  padding: 40px;
-  width: 500px;
-  text-align: center;
-  color: rgb(235, 235, 235);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  background: rgba(255, 255, 255, 0.24); /* Fondo semi-transparente (efecto "glass") */
+  backdrop-filter: blur(10px);           /* Desenfoque de fondo (efecto vidrio) */
+  border-radius: 15px;                   /* Bordes redondeados */
+  padding: 40px;                         /* Espacio interno alrededor del contenido */
+  width: 500px;                          /* Ancho fijo de la caja */
+  text-align: center;                    /* Texto centrado dentro de la caja */
+  color: rgb(235, 235, 235);             /* Color gris claro del texto */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5); /* Sombra oscura para dar relieve */
 }
 
 .contact-box h2 {
-  font-size: 30px;
-  margin-bottom: 10px;
-  color: #00ff2f;
-  text-shadow: 0 0 5px #00ff2f, 0 0 15px #00ff2f;
-  letter-spacing: 2px;
+  font-size: 30px;                       /* Tamaño de letra grande para el título */
+  margin-bottom: 10px;                   /* Espacio debajo del título */
+  color: #00ff2ff4;                      /* Verde fluorescente translúcido */
+  text-shadow: 0 0 1px #000000e8, 0 0 8px #00ff2f; /* Sombra doble: leve negra y resplandor verde */
+  letter-spacing: 2px;                   /* Espaciado entre letras */
 }
 
 .contact-box p {
-  font-size: 16px;
-  margin-bottom: 20px;
-  color: rgba(255, 255, 255, 0.8);
+  font-size: 20px;                       /* Tamaño de letra estándar */
+  margin-bottom: 10px;                   /* Espacio debajo de cada párrafo */
+  color: rgb(24, 42, 17);            /* Texto blanco */
+  font-weight: 500;       /* Texto en negrita */
 }
 
 .links_centados {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  text-decoration: none;
-  color: white;
-  font-size: 14px;
+  display: flex;                /* Flexbox para organizar ícono + texto */
+  align-items: center;          /* Ícono y texto alineados verticalmente */
+  justify-content: flex-start;  /* Alineados a la izquierda en pantallas grandes */
+  gap: 12px;                    /* Espacio entre ícono y texto */
+  text-decoration: none;        /* Sin subrayado */
+  color: white;                 /* Texto blanco */
+  font-size: 14px;              /* Tamaño del texto */
   transition: transform 0.2s ease, color 0.3s ease;
 }
 
 .links_centados:hover {
-  transform: scale(1.05);
-  color: #00ff2f;
+  transform: scale(1.1);                 /* Efecto de zoom al pasar el mouse */
+  color: #00ff2f;                        /* Cambia a verde fluorescente */
 }
-
 
 /*  Ajustes para tablets */
 @media (max-width: 1024px) {
