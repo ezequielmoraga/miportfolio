@@ -34,6 +34,19 @@
     <li><a href="#contacto">Contacto</a></li>
   </ul>
 </nav>
+<button class="dropbtn" onclick="toggleMenu()" aria-controls="miDropdown" aria-expanded="false">
+  &#9776;
+</button>
+
+<div id="miDropdown" class="dropdown-content">
+  <a href="#home" onclick="toggleMenu()">Home</a>
+  <a href="#sobre-mi" onclick="toggleMenu()">Sobre mí</a>
+  <a href="#proyectos" onclick="toggleMenu()">Proyectos</a>
+  <a href="#skills" onclick="toggleMenu()">Skills</a>
+  <a href="#cursos" onclick="toggleMenu()">Cursos</a>
+  <a href="#contacto" onclick="toggleMenu()">Contacto</a>
+</div>
+
   
   <!-- Hero -->
   <header id="home" class="fade-in-section hero">
