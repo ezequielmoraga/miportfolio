@@ -88,7 +88,7 @@ nav a:hover {
 /* Títulos */
 h1, h2, h3 {
   color: #7CFC00;
-  margin-top: 3%;
+  margin-top: 5%;
   margin-bottom: 2%;
   text-align: center;
 }
@@ -100,11 +100,11 @@ h5, .titulo {
 /* Secciones */
 section {
   background: linear-gradient(145deg, #050505, #0f0f0f);
-  border: 1px solid #7CFC00;
+  border: 0.5px solid #7CFC00;
   border-radius: 12px;
   padding: 2rem;
   margin: 4rem auto;
-  max-width: 1100px;
+  max-width: 1190px;
   box-shadow: 0 0 10px #7CFC00;
   height: auto;
 }
