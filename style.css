@@ -582,3 +582,23 @@ footer {
     padding: 0.5rem;
   }
 }
+#chatbase-bubble {
+  position: fixed !important;
+  bottom: 20px !important;
+  right: 20px !important;
+  z-index: 9999 !important;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+/* Para móviles */
+@media (max-width: 600px) {
+  #chatbase-bubble {
+    bottom: 10px !important;
+    right: 10px !important;
+    width: 45px;
+    height: 45px;
+  }
+}
