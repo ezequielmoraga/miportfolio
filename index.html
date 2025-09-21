@@ -1,30 +1,27 @@
 <!DOCTYPE html>
- <html lang="es">
- <head>
+<html lang="es">
+<head>
   <meta charset="UTF-8" />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- iconos de pestaña -->
+  
+  <!-- Iconos de pestaña -->
   <link rel="icon" type="image/png" sizes="60x32" href="images/ezelogop.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/ezelogop-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="images/ezelogop-180.png">
 
-<!-- titulo de pestaña -->
+  <!-- Título -->
   <title>Portfolio de Ezequiel</title>
-  <!-- conexion con el css -->
-  <link rel="stylesheet" href="style.css">
 
-  
- </head>
- <div id="chatbase-bubble"></div>
- <body>
-  <!-- Menú de navegación fijo arriba -->
-   <!-- <nav>
-   <a href="index.html">Inicio</a>
-   <a href="sobre-mi.html">Sobre mí</a>
-   <a href="proyectos.html">Proyectos</a>
-   <a href="habilidades.html">Habilidades</a>
-   <a href="contacto.html">Contacto</a>
-   </nav> -->
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Bubble Chatbase -->
+  <div id="chatbase-bubble"></div>
+
+  <!-- Menú de navegación -->
   <nav>
     <a href="#home">Home</a>
     <a href="#sobre-mi">Sobre mí</a>
@@ -33,36 +30,62 @@
     <a href="#contacto">Contacto</a>
   </nav>
   
-  <!-- Encabezado principal -->
-  <header id="home" class="fade-in-section">
-    <h1>¡Hola! Soy Ezequiel</h1>
-     <h4 class="titulo">
-      Profesional IT | Programador Jr. | Documentación Técnica y Procesos | Perfil Funcional y Resolutivo.
-     </h4>
-    <!-- <div class="dropdown">
-      <button onclick="toggleMenu()" class="dropbtn">Más</button>
-      <div id="miDropdown" class="dropdown-content">
-        <a href="https://github.com/ezequielmoraga" target="blank">Portfolio GitHub</a>
-        <a href="mailto:ezequielmoraga3572@gmail.com">Enviar correo</a>
-        <a href="#cv">Ver CV</a>
-        <a href="https://www.linkedin.com/in/ezequiel-moraga-0a4560275/" target="blank">LinkedIn</a>
+  <!-- Hero -->
+  <header id="home" class="fade-in-section hero">
+    <div class="hero-content">
+      <img src="images/foto-perfi2l.jpg" alt="Foto de Ezequiel" class="perfil-foto">
+      <div class="hero-text">
+        <h1>Ezequiel Moraga</h1>
+        <h4 class="titulo">Profesional IT | Programador Jr. | Documentación Técnica | Perfil resolutivo</h4>
       </div>
-    </div> -->
-    <!-- Botón que lanza un mensaje -->
-    <!-- <button onclick="mostrarMensaje()">Contactarme</button>
-    <button onclick="mostrarMensaje()">Whatssap</button> -->
-
-
+    </div>
   </header>
 
-  <!-- Sección sobre mí -->
+  <!-- Sobre mí -->
   <section id="sobre-mi" class="fade-in-section">
     <h2>Sobre mí</h2>
     <p>
-      Soy programador con visión funcional, mente analítica y enfoque 100% resolutivo. Diseño y desarrollo soluciones tecnológicas que funcionan de verdad: páginas web, sistemas de escritorio, automatizaciones y documentación clara. Cuento con formación completa en Análisis de Sistemas, una sólida base en Python, HTML, CSS, JavaScript y experiencia real aplicando lo aprendido. Me capacito de forma constante en tecnologías actuales como inteligencia artificial, productividad y desarrollo orientado a procesos. No solo escribo código: entiendo problemas, pienso soluciones y las convierto en herramientas funcionales. Trabajo con compromiso, organización y una actitud de mejora continua. Este portfolio muestra parte de lo que sé hacer, pero sobre todo,lo que puedo aportar.
+      Soy programador con visión funcional, mente analítica y enfoque 100% resolutivo. Diseño y desarrollo soluciones tecnológicas que funcionan de verdad: páginas web, sistemas de escritorio, automatizaciones y documentación clara. Cuento con formación completa en Análisis de Sistemas, una sólida base en Python, HTML, CSS, JavaScript y experiencia real aplicando lo aprendido. Me capacito de forma constante en tecnologías actuales como inteligencia artificial, productividad y desarrollo orientado a procesos. No solo escribo código: entiendo problemas, pienso soluciones y las convierto en herramientas funcionales. Trabajo con compromiso, organización y una actitud de mejora continua. Este portfolio muestra parte de lo que sé hacer, pero sobre todo, lo que puedo aportar.
     </p>
   </section>
-  <!-- Sección proyectos -->
+  
+  <!-- Skills -->
+  <section id="skills" class="fade-in-section">
+    <h2>Skills</h2>
+    <div class="skills-carrusel">
+      <div class="carrusel-track">
+        <!-- Primera tanda -->
+        <img src="images/Python-Dark.svg" alt="Python">
+        <img src="images/JavaScript.svg" alt="JavaScript">
+        <img src="images/NodeJS-Light.svg" alt="NodeJS">
+        <img src="images/HTML.svg" alt="HTML">
+        <img src="images/CSS.svg" alt="CSS">
+        <img src="images/Sass.svg" alt="SCSS">
+        <img src="images/Django.svg" alt="Django">
+        <img src="images/Git.svg" alt="Git">
+        <img src="images/Github-Dark.svg" alt="GitHub">
+        <img src="images/PostgreSQL-Dark.svg" alt="PostgreSQL">
+        <img src="images/VSCode-Dark.svg" alt="VS Code">
+        <img src="images/Powershell-Dark.svg" alt="PowerShell">
+
+        <!-- Segunda tanda (copia) -->
+        <img src="images/Python-Dark.svg" alt="Python">
+        <img src="images/JavaScript.svg" alt="JavaScript">
+        <img src="images/NodeJS-Light.svg" alt="NodeJS">
+        <img src="images/HTML.svg" alt="HTML">
+        <img src="images/CSS.svg" alt="CSS">
+        <img src="images/Sass.svg" alt="SCSS">
+        <img src="images/Django.svg" alt="Django">
+        <img src="images/Git.svg" alt="Git">
+        <img src="images/Github-Dark.svg" alt="GitHub">
+        <img src="images/PostgreSQL-Dark.svg" alt="PostgreSQL">
+        <img src="images/VSCode-Dark.svg" alt="VS Code">
+        <img src="images/Powershell-Dark.svg" alt="PowerShell">
+      </div>
+    </div>
+  </section>
+
+  <!-- Proyectos -->
   <section id="proyectos" class="fade-in-section">
     <h2>Proyectos</h2>
     <div>
@@ -72,81 +95,220 @@
       <p>Aplicación para registrar, modificar y eliminar productos con base de datos.</p>
       <h3>Página web personal</h3>
       <p>Este portfolio, creado desde cero en HTML, CSS y JS.</p>
-      <h3>Sitio web institucional del Instituto Superior de Formación Docente y Técnica N.º 58</h3>
+      <h3>Sitio web institucional del ISFDyT N.º 58</h3>
       <p>Desarrollamos el sitio web institucional del ISFDyT N.º 58 de Magdalena (Buenos Aires), con el objetivo de centralizar y facilitar el acceso a información para alumnos y docentes.</p>
       <h3>Automatización de tareas con n8n</h3>
       <p>Flujos de trabajo automatizados para mejorar la productividad.</p>
     </div>
   </section>
-  <!-- Sección habilidades -->
-  <section id="skills" class="fade-in-section">
-    <h2>Skills</h2>
-    <ul>
-      <li> Python, JavaScript,HTML, CSS </li>
-      <br>
-      <img src="images/Python-Dark.svg" alt="Python-Dark" width="50" height="50">
-      <img src="images/JavaScript.svg" alt="java script" width="50" height="50">
-      <img src="images/NodeJS-Light.svg" alt="node js icono" width="50" height="50">
-      <img src="images/HTML.svg" alt="html icono" width="50" height="50">
-      <img src="images/CSS.svg" alt="css icono" width="50" height="50">
-      <img src="images/Sass.svg" alt="scss icono" width="50" height="50">
-      <img src="images/n8n plugin.png" alt="n8n icono" width="50" height="50">
-      <img src="images/Postman.svg" alt="Postman" width="50" height="50">
-      <img src="images/Django.svg" alt="Django icono" width="50" height="50">
-      <img src="images/Git.svg" alt="git icono" width="50" height="50">
-      <img src="images/Github-Dark.svg" alt="git hub icono" width="50" height="50">
-      <img src="images/Powershell-Dark.svg" alt="Powershell icono" width="50" height="50">
-      <img src="images/VSCode-Dark.svg" alt="vs coode icono" width="50" height="50">
-      <img src="images/PostgreSQL-Dark.svg" alt="posgrre icono"width="50" height="50">
 
-      
-    </ul>
+  <!-- Cursos y Certificaciones -->
+  <section id="cursos" class="fade-in-section">
+    <h2>Cursos y Certificaciones</h2>
+    <div class="carrusel-wrapper">
+      <button class="carrusel-btn left" onclick="moverCarrusel(-1)">&#10094;</button>
+      <div class="carrusel" id="carrusel">
+
+        <div class="curso-card"> 
+          <h3>Especialización en IA en la Gestión Pública</h3>
+          <p>Instituto Superior de la Carrera - GCBA</p>
+          <img src="images/certificados/certificado-iagp.png" alt="Certificado IA" class="certificado-thumb" onclick="abrirCertificado(this.src)">
+          <span class="certificacion">2025</span>
+        </div>
+
+        <div class="curso-card"> 
+  <h3>CoderCamp de Empleabilidad</h3>
+  <p>Programa de empleabilidad dictado por Coderhouse.</p>
+  <img src="images/certificados/codercamp.png" 
+       alt="Certificado CoderCamp" 
+       class="certificado-thumb"
+       onclick="abrirCertificado(this.src)">
+  <span class="certificacion">2025</span>
+</div>
+
+<div class="curso-card"> 
+  <h3>Competencias Digitales: Microsoft Excel</h3>
+  <p>Universitat Autònoma de Barcelona - Coursera.</p>
+  <img src="images/certificados/excel.png" 
+       alt="Certificado Excel UAB" 
+       class="certificado-thumb"
+       onclick="abrirCertificado(this.src)">
+  <span class="certificacion">2023</span>
+</div>
+
+<div class="curso-card"> 
+  <h3>Ciberseguridad en el Teletrabajo</h3>
+  <p>Google Activate - INCIBE.</p>
+  <img src="images/certificados/ciber.png" 
+       alt="Certificado Google Activate" 
+       class="certificado-thumb"
+       onclick="abrirCertificado(this.src)">
+  <span class="certificacion">2023</span>
+</div>
+
+<div class="curso-card"> 
+  <h3>Inmersión en Inteligencia Artificial</h3>
+  <p>Alura + Google Gemini.</p>
+  <img src="images/certificados/aluraia.png" 
+       alt="Certificado Inmersión IA" 
+       class="certificado-thumb"
+       onclick="abrirCertificado(this.src)">
+  <span class="certificacion">2025</span>
+</div>
+
+<div class="curso-card"> 
+  <h3>IA desde Cero</h3>
+  <p>Argencon + Digital House.</p>
+  <img src="images/certificados/argeconia.png" 
+       alt="Certificado IA desde cero" 
+       class="certificado-thumb"
+       onclick="abrirCertificado(this.src)">
+  <span class="certificacion">2025</span>
+</div>
+
+<div class="curso-card"> 
+  <h3>Introducción a la Ciencia de Datos</h3>
+  <p>Santander Open Academy - IE University.</p>
+  <img src="images/certificados/cienciadedatos.png" 
+       alt="Certificado Ciencia de Datos" 
+       class="certificado-thumb"
+       onclick="abrirCertificado(this.src)">
+  <span class="certificacion">2024</span>
+</div>
+
+<div class="curso-card"> 
+  <h3>Principios Básicos de Big Data</h3>
+  <p>Fundación Telefónica Movistar.</p>
+  <img src="images/certificados/bigdata.png" 
+       alt="Certificado Big Data" 
+       class="certificado-thumb"
+       onclick="abrirCertificado(this.src)">
+  <span class="certificacion">2025</span>
+</div>
+
+<div class="curso-card"> 
+  <h3>Python</h3>
+  <p>Santander Open Academy.</p>
+  <img src="images/certificados/pythonsantander.png" 
+       alt="Certificado Python Santander" 
+       class="certificado-thumb"
+       onclick="abrirCertificado(this.src)">
+  <span class="certificacion">2024</span>
+</div>
+
+<div class="curso-card"> 
+  <h3>Introducción a la IA Generativa</h3>
+  <p>Santander Open Academy - MIT Professional Education.</p>
+  <img src="images/certificados/santanderia.png" 
+       alt="Certificado IA Generativa MIT" 
+       class="certificado-thumb"
+       onclick="abrirCertificado(this.src)">
+  <span class="certificacion">2025</span>
+</div>
+
+<div class="curso-card"> 
+  <h3>IA para empresas inteligentes</h3>
+  <p>Ministerio de Economía - Ainixs.</p>
+  <img src="images/certificados/capacitaria.png" 
+       alt="Certificado MindHub" 
+       class="certificado-thumb"
+       onclick="abrirCertificado(this.src)">
+  <span class="certificacion">2025</span>
+</div>
+
+<div class="curso-card"> 
+  <h3>Project Manager y Metodologías Ágiles</h3>
+  <p>Teclab - Workshop.</p>
+  <img src="images/certificados/agiles.png" 
+       alt="Certificado Teclab Project Manager" 
+       class="certificado-thumb"
+       onclick="abrirCertificado(this.src)">
+  <span class="certificacion">2025</span>
+</div>
+
+<div class="curso-card"> 
+  <h3>Cómo usar los datos para tomar decisiones</h3>
+  <p>Ministerio de Economía - Equifax.</p>
+  <img src="images/certificados/datosdecisiones.png" 
+       alt="Certificado Equifax Datos" 
+       class="certificado-thumb"
+       onclick="abrirCertificado(this.src)">
+  <span class="certificacion">2025</span>
+</div>
+
+<div class="curso-card"> 
+  <h3>Tecnicatura en Análisis de Sistemas</h3>
+  <p>ISFDyT Nº58 - Buenos Aires.</p>
+  <img src="images/certificados/analistadesitemas.png" 
+       alt="Diploma Análisis de Sistemas" 
+       class="certificado-thumb"
+       onclick="abrirCertificado(this.src)">
+  <span class="certificacion">2021</span>
+</div>
+
+<div class="curso-card"> 
+  <h3>Introducción a la Programación con Pseudocódigo</h3>
+  <p>Udemy - Héctor Costa Guzmán.</p>
+  <img src="images/certificados/pseint.png" 
+       alt="Certificado Udemy Pseudocódigo" 
+       class="certificado-thumb"
+       onclick="abrirCertificado(this.src)">
+  <span class="certificacion">2019</span>
+</div>
+
+
+      </div>
+      <button class="carrusel-btn right" onclick="moverCarrusel(1)">&#10095;</button>
+    </div>
   </section>
-  <!-- Sección contacto -->
-  <section id="contacto" class="fade-in-section">
-    <h2>Contacto</h2>
-    <p>¿Buscas un desarrollador comprometido? Estoy disponible para nuevos proyectos, ¡Contáctame! </p> <br>
-    
-    
-    <!-- Email -->
-    <a href="mailto:ezequielmoraga3572@gmail.com?subject=Consulta%20desde%20tu%20portafolio" target="_blank" class="links_centados">
-     <img src="images/Gmail-Light.svg" alt="Ícono de Gmail" width="50" height="50">
+
+  <!-- Popup certificado -->
+  <div id="popup-certificado" class="popup">
+    <span class="cerrar" onclick="cerrarCertificado()">&times;</span>
+    <img id="popup-img" src="">
+  </div>
+
+  <!-- Contacto -->
+<section id="contacto" class="fade-in-section">
+  <div class="contact-box">
+    <h2>CONTACTO</h2>
+    <p>¿Buscas un desarrollador comprometido? Estoy disponible para nuevos proyectos, ¡contáctame!</p>
+    <br>
+
+    <a href="mailto:ezequielmoraga3572@gmail.com" target="_blank" class="links_centados">
+      <img src="images/Gmail-Light.svg" alt="Gmail" width="40" height="40">
       <span>ezequielmoraga3572@gmail.com</span>
     </a>
-    <br> <br>
+    <br><br>
 
-    <!-- LinkedIn -->
     <a href="https://www.linkedin.com/in/ezequiel-moraga-0a4560275/" target="_blank" class="links_centados">
-      <img src="images/LinkedIn.svg" alt="Ícono de LinkedIn" width="50" height="50">
-      <span>https://www.linkedin.com/in/ezequiel-moraga-0a4560275/</span>
+      <img src="images/LinkedIn.svg" alt="LinkedIn" width="40" height="40">
+      <span>linkedin.com/in/ezequiel-moraga-0a4560275</span>
     </a>
-    <br> <br>
+    <br><br>
 
-    <!-- GitHub -->
-    
     <a href="https://github.com/ezequielmoraga" target="_blank" class="links_centados">
-      <img src="images/Github-Dark.svg" alt="Ícono de GitHub" width="50" height="50">
-       <span>https://github.com/ezequielmoraga</span> 
+      <img src="images/Github-Dark.svg" alt="GitHub" width="40" height="40">
+      <span>github.com/ezequielmoraga</span>
     </a>
-     <br> <br>
+    <br><br>
 
-    <!-- discord -->
     <a href="https://discord.gg/QHRvYa8C" target="_blank" class="links_centados">
-     <img src="images/Discord.svg" alt="discord icono" width="50" height="50">
-     <span>https://discord.gg/QHRvYa8C</span>
+      <img src="images/Discord.svg" alt="Discord" width="40" height="40">
+      <span>discord.gg/QHRvYa8C</span>
     </a>
-    <br> <br>
+  </div>
+</section>
 
-  </section>
-  <!-- Pie de página -->
+
+  <!-- Footer -->
   <footer>
     <br>
     © 2025 Portafolio personal Ezequiel - Todos los derechos reservados.
-    <br>
-    <br>
+    <br><br>
   </footer>
   
+  <!-- Scripts -->
   <script src="script.js"></script>
 </body>
-
 </html>
