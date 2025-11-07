@@ -429,6 +429,25 @@ footer {
 }
 
 
+#proyectos {
+  display: flex;                        /* Usa flexbox para organizar el contenido */
+  justify-content: center;              /* Centra horizontalmente la caja de contacto */
+  align-items: center;                  /* Centra verticalmente la caja de contacto */
+  min-height: 100vh;                    /* La sección ocupa toda la altura de la pantalla */
+  background: linear-gradient(135deg, #345a0b, #1d391e); /* Fondo con degradado diagonal */
+}
+.proyectos-box {
+  background: rgba(255, 255, 255, 0.24); /* Fondo semi-transparente (efecto "glass") */
+  backdrop-filter: blur(10px);           /* Desenfoque de fondo (efecto vidrio) */
+  border-radius: 15px;                   /* Bordes redondeados */
+  padding: 40px;                         /* Espacio interno alrededor del contenido */
+  width: 500px;                          /* Ancho fijo de la caja */
+  text-align: center;                    /* Texto centrado dentro de la caja */
+  color: rgb(235, 235, 235);             /* Color gris claro del texto */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5); /* Sombra oscura para dar relieve */
+}
+
+
 #contacto {
   display: flex;                        /* Usa flexbox para organizar el contenido */
   justify-content: center;              /* Centra horizontalmente la caja de contacto */
