@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
+
   <!-- Iconos de pestaña -->
   <link rel="icon" type="image/png" sizes="60x32" href="images/ezelogop.png">
   <link rel="icon" type="image/png" sizes="16x16" href="images/ezelogop-16.png">
@@ -22,18 +22,18 @@
   <div id="chatbase-bubble"></div>
 
   <!-- Menú de navegación -->
- <nav>
-  <div class="logo">EEM-DEV</div>
-  <button class="hamburger" id="hamburger">☰</button>
-  <ul class="nav-links" id="nav-links">
-    <li><a href="#home">Home</a></li>
-    <li><a href="#sobre-mi">Sobre mí</a></li>
-    <li><a href="#proyectos">Proyectos</a></li>
-    <li><a href="#skills">Skills</a></li>
-    <li><a href="#cursos">Cursos</a></li>
-    <li><a href="#contacto">Contacto</a></li>
-  </ul>
-</nav>
+  <nav>
+    <div class="logo">EEM-DEV</div>
+    <button class="hamburger" id="hamburger">☰</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#sobre-mi">Sobre mí</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#cursos">Cursos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
 
   <!-- Hero -->
   <header id="home" class="fade-in-section hero">
@@ -41,7 +41,7 @@
       <img src="images/potfoliopng.png" alt="Foto de Ezequiel" class="perfil-foto">
       <div class="hero-text">
         <h1>Ezequiel Moraga</h1>
-        <h4 class="titulo">Profesional IT | Programador  | Documentación Técnica | Perfil resolutivo</h4>
+        <h4 class="titulo">Profesional IT | Programador | Documentación Técnica | Perfil resolutivo</h4>
       </div>
     </div>
   </header>
@@ -53,7 +53,7 @@
       Programador con visión funcional y mente analítica. Entiendo el negocio, priorizo valor y ejecuto rápido: páginas web, sistemas de escritorio, automatizaciones y documentación clara. Formación completa en Análisis de Sistemas, base sólida en Python, HTML, CSS, JavaScript y experiencia real aplicando lo aprendido. Me capacito continuamente en IA, productividad y desarrollo orientado a procesos. No solo codeo: resuelvo. Entrego soluciones estables, medibles y listas para escalar.
     </p>
   </section>
-  
+
   <!-- Skills -->
   <section id="skills" class="fade-in-section">
     <h2>Skills</h2>
@@ -93,28 +93,103 @@
   <!-- Proyectos -->
   <section id="proyectos" class="fade-in-section">
     <div class="proyectos-list">
-    <h2>Proyectos</h2>
-    
-      <h3>Sistema de Gestión de Biblioteca</h3>
-      <img src="images/proyectos/biblioteca1.png" alt="biblioteca1">
-      <p>App en Python con Django y SQLite para gestionar libros.</p>
+      <h2>Proyectos</h2>
 
-      <h3>App de control de stock</h3>
-      <img src="images/Python-Dark.svg" alt="Python">
-      <p>Aplicación para registrar, modificar y eliminar productos con base de datos.</p>
+      <div class="projects-grid">
 
-      <h3>Página web personal</h3>
-      <img src="images/proyectos/portfolio.png" alt="portfolio">
-      <p>Este portfolio, creado desde cero en HTML, CSS y JS.</p>
-
-      <h3>Sitio web institucional del ISFDyT N.º 58</h3>
-      <img src="images/proyectos/isfdyt58.png" alt="Instituto">
-      <p>Desarrollamos el sitio web institucional del ISFDyT N.º 58 de Magdalena (Buenos Aires), con el objetivo de centralizar y facilitar el acceso a información para alumnos y docentes.</p>
-      <h3>Automatización de tareas con n8n</h3>
-      <img src="images/proyectos/n8nagent.png" alt="n8nagent">
-      <p>Flujos de trabajo automatizados para mejorar la productividad.</p>
+        <article class="project-card">
+          <img src="images/proyectos/biblioteca1.png" alt="Sistema de Gestión de Biblioteca">
+          <div class="project-body">
+            <h3>Sistema de Gestión de Biblioteca</h3>
+            <p>App en Python con Django y SQLite para gestionar libros.</p>
+            <div class="tags">
+              <span>Django</span><span>Python</span><span>SQLite</span>
+            </div>
+            <div class="actions">
+              <a class="btn" href="https://github.com/ezequielmoraga/REPO_BIBLIOTECA" target="_blank" rel="noopener">Repo</a>
+              <a class="btn btn--ghost" href="https://TU_DEMO_BIBLIOTECA" target="_blank" rel="noopener">Demo</a>
+            </div>
+          </div>
+        </article>
+        
+            <article class="project-card">
+  <img src="images/proyectos/nodecrud.png" alt="CRUD Logística Node.js">
+  <div class="project-body">
+    <h3>CRUD Logística (Node.js + Express + SQLite)</h3>
+    <p>API REST con autenticación y frontend simple para gestionar choferes y vehículos.</p>
+    <div class="tags">
+      <span>Node.js</span><span>Express</span><span>SQLite</span><span>JWT</span>
     </div>
-  </section>
+    <div class="actions">
+      <a class="btn" href="https://github.com/ezequielmoraga/REPO_NODE_CRUD" target="_blank" rel="noopener">Repo</a>
+      <a class="btn btn--ghost" href="https://TU_DEMO_NODE_CRUD" target="_blank" rel="noopener">Demo</a>
+    </div>
+  </div>
+</article>
+
+        <article class="project-card">
+          <img src="images/Python-Dark.svg" alt="App de control de stock">
+          <div class="project-body">
+            <h3>App de control de stock</h3>
+            <p>Aplicación para registrar, modificar y eliminar productos con base de datos.</p>
+            <div class="tags">
+              <span>Python</span><span>CRUD</span><span>DB</span>
+            </div>
+            <div class="actions">
+              <a class="btn" href="https://github.com/ezequielmoraga/REPO_STOCK" target="_blank" rel="noopener">Repo</a>
+              <a class="btn btn--ghost" href="https://TU_DEMO_STOCK" target="_blank" rel="noopener">Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="images/proyectos/portfolio.png" alt="Página web personal">
+          <div class="project-body">
+            <h3>Página web personal</h3>
+            <p>Este portfolio, creado desde cero en HTML, CSS y JS.</p>
+            <div class="tags">
+              <span>HTML</span><span>CSS</span><span>JS</span>
+            </div>
+            <div class="actions">
+              <a class="btn" href="https://github.com/ezequielmoraga/REPO_PORTFOLIO" target="_blank" rel="noopener">Repo</a>
+              <a class="btn btn--ghost" href="https://ezequielmoraga.github.io/miportfolio/" target="_blank" rel="noopener">Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="images/proyectos/isfdyt58.png" alt="Sitio web institucional ISFDyT N.º 58">
+          <div class="project-body">
+            <h3>Sitio web institucional del ISFDyT N.º 58</h3>
+            <p>Desarrollamos el sitio web institucional para facilitar el acceso a información para alumnos y docentes.</p>
+            <div class="tags">
+              <span>Web</span><span>UX</span><span>Contenido</span>
+            </div>
+            <div class="actions">
+              <a class="btn" href="https://github.com/ezequielmoraga/REPO_ISFDYT58" target="_blank" rel="noopener">Repo</a>
+              <a class="btn btn--ghost" href="https://TU_DEMO_ISFDYT58" target="_blank" rel="noopener">Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="images/proyectos/n8nagent.png" alt="Automatización con n8n">
+          <div class="project-body">
+            <h3>Automatización de tareas con n8n</h3>
+            <p>Flujos de trabajo automatizados para mejorar la productividad.</p>
+            <div class="tags">
+              <span>n8n</span><span>Automatización</span><span>Productividad</span>
+            </div>
+            <div class="actions">
+              <a class="btn" href="https://github.com/ezequielmoraga/REPO_N8N" target="_blank" rel="noopener">Repo</a>
+              <a class="btn btn--ghost" href="https://TU_DEMO_N8N" target="_blank" rel="noopener">Demo</a>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /projects-grid -->
+    </div><!-- /proyectos-list -->
+  </section><!-- /proyectos -->
 
   <!-- Cursos y Certificaciones -->
   <section id="cursos" class="fade-in-section">
@@ -123,153 +198,152 @@
       <button class="carrusel-btn left" onclick="moverCarrusel(-1)">&#10094;</button>
       <div class="carrusel" id="carrusel">
 
-        <div class="curso-card"> 
+        <div class="curso-card">
           <h3>Especialización en IA en la Gestión Pública</h3>
           <p>Instituto Superior de la Carrera - GCBA</p>
           <img src="images/certificados/certificado-iagp.png" alt="Certificado IA" class="certificado-thumb" onclick="abrirCertificado(this.src)">
           <span class="certificacion">2025</span>
         </div>
 
-        <div class="curso-card"> 
-  <h3>CoderCamp de Empleabilidad</h3>
-  <p>Programa de empleabilidad dictado por Coderhouse.</p>
-  <img src="images/certificados/codercamp.png" 
-       alt="Certificado CoderCamp" 
-       class="certificado-thumb"
-       onclick="abrirCertificado(this.src)">
-  <span class="certificacion">2025</span>
-</div>
+        <div class="curso-card">
+          <h3>CoderCamp de Empleabilidad</h3>
+          <p>Programa de empleabilidad dictado por Coderhouse.</p>
+          <img src="images/certificados/codercamp.png"
+               alt="Certificado CoderCamp"
+               class="certificado-thumb"
+               onclick="abrirCertificado(this.src)">
+          <span class="certificacion">2025</span>
+        </div>
 
-<div class="curso-card"> 
-  <h3>Competencias Digitales: Microsoft Excel</h3>
-  <p>Universitat Autònoma de Barcelona - Coursera.</p>
-  <img src="images/certificados/excel.png" 
-       alt="Certificado Excel UAB" 
-       class="certificado-thumb"
-       onclick="abrirCertificado(this.src)">
-  <span class="certificacion">2023</span>
-</div>
+        <div class="curso-card">
+          <h3>Competencias Digitales: Microsoft Excel</h3>
+          <p>Universitat Autònoma de Barcelona - Coursera.</p>
+          <img src="images/certificados/excel.png"
+               alt="Certificado Excel UAB"
+               class="certificado-thumb"
+               onclick="abrirCertificado(this.src)">
+          <span class="certificacion">2023</span>
+        </div>
 
-<div class="curso-card"> 
-  <h3>Ciberseguridad en el Teletrabajo</h3>
-  <p>Google Activate - INCIBE.</p>
-  <img src="images/certificados/ciber.png" 
-       alt="Certificado Google Activate" 
-       class="certificado-thumb"
-       onclick="abrirCertificado(this.src)">
-  <span class="certificacion">2023</span>
-</div>
+        <div class="curso-card">
+          <h3>Ciberseguridad en el Teletrabajo</h3>
+          <p>Google Activate - INCIBE.</p>
+          <img src="images/certificados/ciber.png"
+               alt="Certificado Google Activate"
+               class="certificado-thumb"
+               onclick="abrirCertificado(this.src)">
+          <span class="certificacion">2023</span>
+        </div>
 
-<div class="curso-card"> 
-  <h3>Inmersión en Inteligencia Artificial</h3>
-  <p>Alura + Google Gemini.</p>
-  <img src="images/certificados/aluraia.png" 
-       alt="Certificado Inmersión IA" 
-       class="certificado-thumb"
-       onclick="abrirCertificado(this.src)">
-  <span class="certificacion">2025</span>
-</div>
+        <div class="curso-card">
+          <h3>Inmersión en Inteligencia Artificial</h3>
+          <p>Alura + Google Gemini.</p>
+          <img src="images/certificados/aluraia.png"
+               alt="Certificado Inmersión IA"
+               class="certificado-thumb"
+               onclick="abrirCertificado(this.src)">
+          <span class="certificacion">2025</span>
+        </div>
 
-<div class="curso-card"> 
-  <h3>IA desde Cero</h3>
-  <p>Argencon + Digital House.</p>
-  <img src="images/certificados/argeconia.png" 
-       alt="Certificado IA desde cero" 
-       class="certificado-thumb"
-       onclick="abrirCertificado(this.src)">
-  <span class="certificacion">2025</span>
-</div>
+        <div class="curso-card">
+          <h3>IA desde Cero</h3>
+          <p>Argencon + Digital House.</p>
+          <img src="images/certificados/argeconia.png"
+               alt="Certificado IA desde cero"
+               class="certificado-thumb"
+               onclick="abrirCertificado(this.src)">
+          <span class="certificacion">2025</span>
+        </div>
 
-<div class="curso-card"> 
-  <h3>Introducción a la Ciencia de Datos</h3>
-  <p>Santander Open Academy - IE University.</p>
-  <img src="images/certificados/cienciadedatos.png" 
-       alt="Certificado Ciencia de Datos" 
-       class="certificado-thumb"
-       onclick="abrirCertificado(this.src)">
-  <span class="certificacion">2024</span>
-</div>
+        <div class="curso-card">
+          <h3>Introducción a la Ciencia de Datos</h3>
+          <p>Santander Open Academy - IE University.</p>
+          <img src="images/certificados/cienciadedatos.png"
+               alt="Certificado Ciencia de Datos"
+               class="certificado-thumb"
+               onclick="abrirCertificado(this.src)">
+          <span class="certificacion">2024</span>
+        </div>
 
-<div class="curso-card"> 
-  <h3>Principios Básicos de Big Data</h3>
-  <p>Fundación Telefónica Movistar.</p>
-  <img src="images/certificados/bigdata.png" 
-       alt="Certificado Big Data" 
-       class="certificado-thumb"
-       onclick="abrirCertificado(this.src)">
-  <span class="certificacion">2025</span>
-</div>
+        <div class="curso-card">
+          <h3>Principios Básicos de Big Data</h3>
+          <p>Fundación Telefónica Movistar.</p>
+          <img src="images/certificados/bigdata.png"
+               alt="Certificado Big Data"
+               class="certificado-thumb"
+               onclick="abrirCertificado(this.src)">
+          <span class="certificacion">2025</span>
+        </div>
 
-<div class="curso-card"> 
-  <h3>Python</h3>
-  <p>Santander Open Academy.</p>
-  <img src="images/certificados/pythonsantander.png" 
-       alt="Certificado Python Santander" 
-       class="certificado-thumb"
-       onclick="abrirCertificado(this.src)">
-  <span class="certificacion">2024</span>
-</div>
+        <div class="curso-card">
+          <h3>Python</h3>
+          <p>Santander Open Academy.</p>
+          <img src="images/certificados/pythonsantander.png"
+               alt="Certificado Python Santander"
+               class="certificado-thumb"
+               onclick="abrirCertificado(this.src)">
+          <span class="certificacion">2024</span>
+        </div>
 
-<div class="curso-card"> 
-  <h3>Introducción a la IA Generativa</h3>
-  <p>Santander Open Academy - MIT Professional Education.</p>
-  <img src="images/certificados/santanderia.png" 
-       alt="Certificado IA Generativa MIT" 
-       class="certificado-thumb"
-       onclick="abrirCertificado(this.src)">
-  <span class="certificacion">2025</span>
-</div>
+        <div class="curso-card">
+          <h3>Introducción a la IA Generativa</h3>
+          <p>Santander Open Academy - MIT Professional Education.</p>
+          <img src="images/certificados/santanderia.png"
+               alt="Certificado IA Generativa MIT"
+               class="certificado-thumb"
+               onclick="abrirCertificado(this.src)">
+          <span class="certificacion">2025</span>
+        </div>
 
-<div class="curso-card"> 
-  <h3>IA para empresas inteligentes</h3>
-  <p>Ministerio de Economía - Ainixs.</p>
-  <img src="images/certificados/capacitaria.png" 
-       alt="Certificado MindHub" 
-       class="certificado-thumb"
-       onclick="abrirCertificado(this.src)">
-  <span class="certificacion">2025</span>
-</div>
+        <div class="curso-card">
+          <h3>IA para empresas inteligentes</h3>
+          <p>Ministerio de Economía - Ainixs.</p>
+          <img src="images/certificados/capacitaria.png"
+               alt="Certificado MindHub"
+               class="certificado-thumb"
+               onclick="abrirCertificado(this.src)">
+          <span class="certificacion">2025</span>
+        </div>
 
-<div class="curso-card"> 
-  <h3>Project Manager y Metodologías Ágiles</h3>
-  <p>Teclab - Workshop.</p>
-  <img src="images/certificados/agiles.png" 
-       alt="Certificado Teclab Project Manager" 
-       class="certificado-thumb"
-       onclick="abrirCertificado(this.src)">
-  <span class="certificacion">2025</span>
-</div>
+        <div class="curso-card">
+          <h3>Project Manager y Metodologías Ágiles</h3>
+          <p>Teclab - Workshop.</p>
+          <img src="images/certificados/agiles.png"
+               alt="Certificado Teclab Project Manager"
+               class="certificado-thumb"
+               onclick="abrirCertificado(this.src)">
+          <span class="certificacion">2025</span>
+        </div>
 
-<div class="curso-card"> 
-  <h3>Cómo usar los datos para tomar decisiones</h3>
-  <p>Ministerio de Economía - Equifax.</p>
-  <img src="images/certificados/datosdecisiones.png" 
-       alt="Certificado Equifax Datos" 
-       class="certificado-thumb"
-       onclick="abrirCertificado(this.src)">
-  <span class="certificacion">2025</span>
-</div>
+        <div class="curso-card">
+          <h3>Cómo usar los datos para tomar decisiones</h3>
+          <p>Ministerio de Economía - Equifax.</p>
+          <img src="images/certificados/datosdecisiones.png"
+               alt="Certificado Equifax Datos"
+               class="certificado-thumb"
+               onclick="abrirCertificado(this.src)">
+          <span class="certificacion">2025</span>
+        </div>
 
-<div class="curso-card"> 
-  <h3>Tecnicatura en Análisis de Sistemas</h3>
-  <p>ISFDyT Nº58 - Buenos Aires.</p>
-  <img src="images/certificados/analistadesitemas.png" 
-       alt="Diploma Análisis de Sistemas" 
-       class="certificado-thumb"
-       onclick="abrirCertificado(this.src)">
-  <span class="certificacion">2021</span>
-</div>
+        <div class="curso-card">
+          <h3>Tecnicatura en Análisis de Sistemas</h3>
+          <p>ISFDyT Nº58 - Buenos Aires.</p>
+          <img src="images/certificados/analistadesitemas.png"
+               alt="Diploma Análisis de Sistemas"
+               class="certificado-thumb"
+               onclick="abrirCertificado(this.src)">
+          <span class="certificacion">2021</span>
+        </div>
 
-<div class="curso-card"> 
-  <h3>Introducción a la Programación con Pseudocódigo</h3>
-  <p>Udemy - Héctor Costa Guzmán.</p>
-  <img src="images/certificados/pseint.png" 
-       alt="Certificado Udemy Pseudocódigo" 
-       class="certificado-thumb"
-       onclick="abrirCertificado(this.src)">
-  <span class="certificacion">2019</span>
-</div>
-
+        <div class="curso-card">
+          <h3>Introducción a la Programación con Pseudocódigo</h3>
+          <p>Udemy - Héctor Costa Guzmán.</p>
+          <img src="images/certificados/pseint.png"
+               alt="Certificado Udemy Pseudocódigo"
+               class="certificado-thumb"
+               onclick="abrirCertificado(this.src)">
+          <span class="certificacion">2019</span>
+        </div>
 
       </div>
       <button class="carrusel-btn right" onclick="moverCarrusel(1)">&#10095;</button>
@@ -283,37 +357,31 @@
   </div>
 
   <!-- Contacto -->
-<section id="contacto" class="fade-in-section">
-  <div class="contact-box">
-    <h2>CONTACTO</h2>
-    <p></p>
+  <section id="contacto" class="fade-in-section">
+    <div class="contact-box">
+      <h2>CONTACTO</h2>
+      <p></p>
 
-    <a href="mailto:ezequielmoraga3572@gmail.com" target="_blank" class="links_centados">
-      <img src="images/Gmail-Light.svg" alt="Gmail" width="40" height="40">
-      <span>ezequielmoraga3572@gmail.com</span>
-    </a>
-    <br><br>
+      <a href="mailto:ezequielmoraga3572@gmail.com" target="_blank" class="links_centados">
+        <img src="images/Gmail-Light.svg" alt="Gmail" width="40" height="40">
+        <span>ezequielmoraga3572@gmail.com</span>
+      </a>
+      <br><br>
 
-    <a href="https://www.linkedin.com/in/ezequiel-moraga-0a4560275/" target="_blank" class="links_centados">
-      <img src="images/LinkedIn.svg" alt="LinkedIn" width="40" height="40">
-      <span>linkedin.com/in/ezequiel-moraga-0a4560275</span>
-    </a>
-    <br><br>
+      <a href="https://www.linkedin.com/in/ezequiel-moraga-0a4560275/" target="_blank" class="links_centados">
+        <img src="images/LinkedIn.svg" alt="LinkedIn" width="40" height="40">
+        <span>linkedin.com/in/ezequiel-moraga-0a4560275</span>
+      </a>
+      <br><br>
 
-    <a href="https://github.com/ezequielmoraga" target="_blank" class="links_centados">
-      <img src="images/Github-Dark.svg" alt="GitHub" width="40" height="40">
-      <span>github.com/ezequielmoraga</span>
-    </a>
-    <br><br>
+      <a href="https://github.com/ezequielmoraga" target="_blank" class="links_centados">
+        <img src="images/Github-Dark.svg" alt="GitHub" width="40" height="40">
+        <span>github.com/ezequielmoraga</span>
+      </a>
 
-    
-    <!-- <a href="https://discord.gg/QHRvYa8C" target="_blank" class="links_centados">
-      <img src="images/Discord.svg" alt="Discord" width="40" height="40">
-      <span>discord.gg/QHRvYa8C</span>
-    </a> -->
-  </div>
-</section>
 
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer>
@@ -321,7 +389,7 @@
     © 2025 Portafolio personal Ezequiel - Todos los derechos reservados.
     <br><br>
   </footer>
-  
+
   <!-- Scripts -->
   <script src="script.js"></script>
 </body>
