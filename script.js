@@ -12,23 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   secs.forEach(s => obs.observe(s));
 });
 
-// Función que se llama al hacer clic en el botón "Más"
-function toggleMenu() {
-  // Agrega o quita la clase "show" al menú desplegable
-  document.getElementById("miDropdown").classList.toggle("show");
-}
 
-// Si el usuario hace clic fuera del botón, se cierra el menú
-window.onclick = function(e) {
-  // Si el clic NO fue sobre el botón
-  if (!e.target.matches('.dropbtn')) {
-    // Oculta todos los dropdowns
-    const dropdowns = document.getElementsByClassName("dropdown-content");
-    for (let i = 0; i < dropdowns.length; i++) {
-      dropdowns[i].classList.remove('show');
-    }
-  }
-};
 
 window.embeddedChatbotConfig = {
   chatbotId: "2t-x0QxNsdXDIP_6NeFSd",
@@ -119,6 +103,11 @@ if (carrusel) {
 // Menú hamburguesa
 const hamburger = document.getElementById("hamburger");
 const navLinks = document.getElementById("nav-links");
+// Cerrar menú al tocar un link (mobile)
+document.querySelectorAll('#nav-links a').forEach(a => {
+  a.addEventListener('click', () => navLinks.classList.remove('show'));
+});
+
 
 hamburger.addEventListener("click", () => {
   navLinks.classList.toggle("show");

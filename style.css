@@ -429,13 +429,12 @@ footer {
 }
 
 
-#proyectos {
-  display: flex;                        /* Usa flexbox para organizar el contenido */
-  justify-content: center;              /* Centra horizontalmente la caja de contacto */
-  align-items: center;                  /* Centra verticalmente la caja de contacto */
-  min-height: 100vh;                    /* La sección ocupa toda la altura de la pantalla */
-  background: linear-gradient(135deg, #345a0b, #1d391e); /* Fondo con degradado diagonal */
+#proyectos{
+  display: block;
+  min-height: auto;
+  background: linear-gradient(145deg, #050505, #0f0f0f);
 }
+
 .proyectos-box {
   background: rgba(255, 255, 255, 0.24); /* Fondo semi-transparente (efecto "glass") */
   backdrop-filter: blur(10px);           /* Desenfoque de fondo (efecto vidrio) */
