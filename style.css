@@ -1041,3 +1041,63 @@ body.menu-open {
   font-weight: 600;
   margin-bottom: 1.2rem;
 }
+/* ===== FIX MENU MOBILE (overlay limpio y sólido) ===== */
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2000;
+}
+
+/* tu UL */
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Mobile: que sea un panel full-screen */
+@media (max-width: 900px) {
+  .hamburger {
+    display: block;
+    z-index: 3000;
+    position: relative;
+  }
+
+  .nav-links {
+    position: fixed;
+    inset: 0;                 /* top right bottom left = 0 */
+    height: 100vh;
+    width: 100%;
+    padding: 90px 28px 28px;  /* deja espacio para la barra de nav */
+
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+
+    background: #050805;      /* SÓLIDO (clave) */
+    z-index: 2500;
+
+    /* cerrado por defecto */
+    transform: translateX(100%);
+    transition: transform 0.25s ease;
+  }
+
+  /* abierto */
+  .nav-links.open {
+    transform: translateX(0);
+  }
+
+  .nav-links li a {
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-decoration: none;
+  }
+}
+
+/* bloquear scroll cuando menú está abierto */
+body.menu-open {
+  overflow: hidden;
+}

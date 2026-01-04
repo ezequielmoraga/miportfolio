@@ -119,22 +119,22 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 // Fin frases contacto
 // Menú hamburguesa (ÚNICO y correcto)
-const hamburger = document.getElementById("hamburger");
-const navLinks = document.getElementById("nav-links");
-
-if (hamburger && navLinks) {
-  hamburger.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-  });
-
-  // Cerrar menú al tocar un link
-  navLinks.querySelectorAll("a").forEach(link => {
-    link.addEventListener("click", () => {
-      navLinks.classList.remove("active");
-    });
-  });
-}
 
 function closeMenu() {
   document.body.classList.remove("menu-open");
 }
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("nav-links");
+
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("open");
+  document.body.classList.toggle("menu-open");
+});
+
+// cerrar al tocar un link
+navLinks.querySelectorAll("a").forEach(a => {
+  a.addEventListener("click", () => {
+    navLinks.classList.remove("open");
+    document.body.classList.remove("menu-open");
+  });
+});
