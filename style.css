@@ -45,26 +45,6 @@ body {
 
 /* Nav */
 /* ====== NAV GENERAL ====== */
-nav {
-  position: fixed;              /* Deja la barra fija arriba aunque hagas scroll */
-  top: 2%;                       /* La pega al borde superior */
-  left: 0%;                      /* La pega al borde izquierdo */
-  width: 95%;                  /* Hace que ocupe todo el ancho de la pantalla */
-
-  background: rgba(87, 83, 83, 0.064); /* Color de fondo semitransparente */
-  backdrop-filter: blur(1px);   /* Le da efecto de desenfoque (glassmorphism) */
-
-  display: flex;                /* Activa flexbox para ordenar los elementos */
-  justify-content: space-between; /* Separa los elementos a los extremos (izq y der) */
-  align-items: center;          /* Centra los elementos verticalmente */
-  padding: 0.8rem 0.6rem;       /* Espacio interno (arriba/abajo = 0.6rem, izq/der = 1.5rem) */
-
-  z-index: 1000;                /* Lo pone por encima de casi todos los elementos */
-
-  /* línea y sombra */
-  border-bottom: 1px solid rgba(0, 0, 0, 0.895); /* Línea verde translúcida debajo de la barra */
-  box-shadow: 0 10px 6px rgba(0,0,0,0.4); /* Sombra hacia abajo que da efecto flotante */
-}
 
 
 nav .logo {
