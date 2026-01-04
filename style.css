@@ -1016,3 +1016,28 @@ footer {
   }
 }
 .no-scroll{ overflow: hidden; }
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+
+  background: #050805; /* sólido */
+  z-index: 9999;
+
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+body.menu-open {
+  overflow: hidden;
+}
+.mobile-menu {
+  z-index: 1000;
+}
+.mobile-menu a {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
