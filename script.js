@@ -70,9 +70,19 @@ function abrirCertificado(src) {
   popup.style.display = "flex";
 }
 
-function cerrarCertificado() {
-  document.getElementById("popup-certificado").style.display = "none";
+function cerrarCertificado(e) {
+  // Si hacen click en la imagen NO cierres (solo cerrar fondo o X)
+  if (e && e.target && e.target.id === "popup-img") return;
+
+  const popup = document.getElementById("popup-certificado");
+  const popupImg = document.getElementById("popup-img");
+
+  popup.style.display = "none";
+  popupImg.src = "";
 }
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") cerrarCertificado();
+});
 
 
 //carrusesel

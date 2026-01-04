@@ -875,3 +875,25 @@ button:hover{ transform: scale(1.05); }
    ========================= */
 /* #skills{ outline: 3px solid red; } */
 /* #cursos{ outline: 3px solid cyan; } */
+/* ===== Popup certificado: asegurar X visible ===== */
+#popup-certificado {
+  position: fixed;       /* por si otra regla lo pisa */
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.85);
+  z-index: 9999;
+}
+
+#popup-certificado .cerrar{
+  position: absolute;
+  top: 18px;
+  right: 22px;
+  font-size: 42px;
+  font-weight: 800;
+  color: #fff;
+  cursor: pointer;
+  z-index: 10000;        /* arriba de todo */
+  text-shadow: 0 0 10px rgba(0,0,0,0.7);
+}

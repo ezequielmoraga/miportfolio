@@ -414,10 +414,10 @@
   </section>
 
   <!-- Popup certificado -->
-  <div id="popup-certificado" class="popup">
-    <span class="cerrar" onclick="cerrarCertificado()">&times;</span>
-    <img id="popup-img" src="">
-  </div>
+<div id="popup-certificado" class="popup" onclick="cerrarCertificado()">
+  <span class="cerrar" onclick="cerrarCertificado()">&times;</span>
+  <img id="popup-img" src="" onclick="event.stopPropagation()">
+</div>
 
   <!-- Contacto -->
   <section id="contacto" class="fade-in-section">
