@@ -131,3 +131,14 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 // Fin frases contacto
+
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
+
+// Cerrar menú al tocar un link
+navLinks.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", () => {
+    navLinks.classList.remove("active");
+  });
+});
