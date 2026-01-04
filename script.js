@@ -100,19 +100,6 @@ if (carrusel) {
 }
 
 
-// Menú hamburguesa
-const hamburger = document.getElementById("hamburger");
-const navLinks = document.getElementById("nav-links");
-// Cerrar menú al tocar un link (mobile)
-document.querySelectorAll('#nav-links a').forEach(a => {
-  a.addEventListener('click', () => navLinks.classList.remove('show'));
-});
-
-
-hamburger.addEventListener("click", () => {
-  navLinks.classList.toggle("show");
-});
-
 //contacto frases
 // Frases dinámicas para la sección de contacto
 const frasesContacto = [
@@ -131,14 +118,21 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 // Fin frases contacto
+// Menú hamburguesa (ÚNICO y correcto)
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("nav-links");
 
-hamburger.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
-});
-
-// Cerrar menú al tocar un link
-navLinks.querySelectorAll("a").forEach(link => {
-  link.addEventListener("click", () => {
-    navLinks.classList.remove("active");
+if (hamburger && navLinks) {
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
   });
-});
+
+  // Cerrar menú al tocar un link
+  navLinks.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("active");
+    });
+  });
+}
+document.body.classList.toggle("no-scroll");
+// Fin menú hamburguesa
