@@ -118,12 +118,10 @@ button:hover {
 }
 
 /* Animaciones */
-.fade-in-section {
-  opacity: 0;
-  transform: translateY(50px);
-  transition: opacity 1s ease-out, transform 1s ease-out;
+.fade-in-section{
+  min-height: auto;
+  height: auto;
 }
-
 .fade-in-section.visible {
   opacity: 1;
   transform: translateY(0);
@@ -535,8 +533,7 @@ footer {
   }
 
   section {
-    margin: 2rem 1rem;
-    padding: 1.5rem;
+    padding: 60px 18px;
   }
 }
 
@@ -612,6 +609,11 @@ footer {
     width: 45px;
     height: 45px;
   }
+.skills-carrusel{
+  margin: 20px 0 0;
+  padding: 0;
+  height: auto;
+}
 
   /* CURSOS */
   .carrusel {
@@ -1081,3 +1083,5 @@ nav {
 body.menu-open {
   overflow: hidden;
 }
+#skills{ outline: 3px solid red; }
+#cursos{ outline: 3px solid cyan; }
