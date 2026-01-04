@@ -741,7 +741,7 @@ footer {
   cursor: pointer;
 }
 
-/* ====== RESPONSIVE MENU ====== */
+/* ====== RESPONSIVE MENU ======
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -756,7 +756,7 @@ footer {
   }
   .nav-links.show { display: flex; }
   .hamburger { display: block; }
-}
+} */
 
 /* Botón hamburguesa oculto en desktop */
 .dropbtn {
