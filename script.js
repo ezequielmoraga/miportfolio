@@ -134,11 +134,6 @@ if (hamburger && navLinks) {
     });
   });
 }
-document.body.classList.toggle("no-scroll");
-// Fin menú hamburguesa
-function openMenu() {
-  document.body.classList.add("menu-open");
-}
 
 function closeMenu() {
   document.body.classList.remove("menu-open");
