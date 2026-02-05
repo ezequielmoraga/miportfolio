@@ -673,6 +673,47 @@ button:hover{ transform: scale(1.05); }
   display: block;
   background: rgba(255,255,255,0.06);
 }
+/* Texto dentro de la card */
+.project-body{
+  padding: 14px 14px 16px;
+}
+
+.project-card h3{
+  font-size: 15px;
+  line-height: 1.2;
+  margin: 0 0 8px;
+}
+
+.project-card p{
+  font-size: 13px;
+  line-height: 1.45;
+  margin: 0 0 12px;
+}
+
+.project-card p strong{
+  font-weight: 700;
+}
+
+/* Tags */
+.project-card .tags{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.project-card .tags span{
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.14);
+}
+
+/* Botones */
+.project-card .actions{
+  display: flex;
+  gap: 10px;
+}
 
 .project-body{ padding: 14px; }
 
